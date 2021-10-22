@@ -1,0 +1,14 @@
+@use 'sass:math';
+@use "color/main" as Color;
+
+@mixin change($index:0) {
+    $shadow-width: $index * 2;
+    box-shadow: #{$shadow-width}px #{$shadow-width}px #{$index*3}px Color.$black;
+}
+
+@mixin hover($from:3,$to:1) {
+    @include change($from);
+    &:hover{
+        @include change($to)
+    }
+}

@@ -1,0 +1,5 @@
+@use "color/main" as Color;
+@mixin background($color:Color.$bg){
+    background-color: rgba($color,.8);
+    backdrop-filter: blur(12px);
+}
