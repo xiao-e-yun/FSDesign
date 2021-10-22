@@ -1,49 +1,5 @@
 //加載顏色
-@use "./color/main" as Color;
-@use "./border/main" as Border;
-@use "./depth" as Depth;
-@import "./main";
-
-//=======================
-//如果使用 @import 自動套用
-//=======================
-// body{
-//     color: Color.$main;
-//     background-color: Color.$bg;
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: baseline;
-//     margin: 0;
-//     background-image: url(https://xiaoeyun.me/Qimage/img/desktop.jpg);
-//     &>div{
-//         display: inline-block;
-//         padding: .2em 1em;
-//         margin: 1em;
-//         transition:box-shadow ease-in-out .2s,backdrop-filter ease-in-out .2s;
-//         @include background();
-//         @include Depth.hover(3,1);
-//         &:hover{
-//             backdrop-filter: blur(2px);
-//         }
-//     }
-// }
-
-// button{
-//     color: Color.$main;
-//     border: none;
-//     border-radius: 0;
-//     border: Border.$main;
-//     background-color: Color.$side-2;
-//     @include Depth.change(1);
-//     transition:
-//         box-shadow .6s,
-//         border .6s,
-//         color .2s,
-//     ;
-//     &:hover{
-//         color: Color.$side-1;
-//         border: Border.$side-1;
-//         background-color: Color.$side-3;
-//         @include Depth.change(0);
-//     }
-// }
+@forward "./color/main" as color-*;
+@forward "./border/main" as border-*;
+@forward "./depth" as depth-*;
+@forward "./main";

@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "web style lib",
   "scripts": {
-    "build": "sass src/index.scss:dist/main.css --no-source-map --style=compressed --load-path=src",
-    "dev": "sass src/index.scss:build/FSdesign.css --watch --load-path=src"
+    "build": "sass src/index.scss:build/main.css --load-path=src",
+    "dev": "sass src/index.scss:build/main.css --watch --load-path=src"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xiao-e-yun/FlatShadow-design.git"
+    "url": "git+https://github.com/xiao-e-yun/FSDesign.git"
   },
   "keywords": [
     "css"
@@ -16,7 +16,7 @@
   "author": "xiao-e-yun",
   "license": "BSD-3-Clause",
   "bugs": {
-    "url": "https://github.com/xiao-e-yun/FlatShadow-design/issues"
+    "url": "https://github.com/xiao-e-yun/FSDesign/issues"
   },
-  "homepage": "https://github.com/xiao-e-yun/FlatShadow-design#readme"
+  "homepage": "https://github.com/xiao-e-yun/FSDesign#readme"
 }
